@@ -914,6 +914,136 @@ img { max-width: 100%; display: block; }
   font-size: 1.1rem;
 }
 
+/* ---------- CONTACT SECTION ---------- */
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-top: 3rem;
+}
+
+.contact-info h3 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.contact-info > p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  font-size: 1.05rem;
+}
+
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  transition: all var(--transition);
+  color: var(--text-primary);
+}
+
+.contact-method:hover {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.contact-method-icon {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-subtle);
+  border-radius: var(--radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  flex-shrink: 0;
+  transition: all var(--transition);
+}
+
+.contact-method:hover .contact-method-icon {
+  background: var(--primary);
+  color: white;
+}
+
+.contact-method-info h4 {
+  font-size: 1rem;
+  color: var(--text-primary);
+  margin-bottom: 0.2rem;
+}
+
+.contact-method-info p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.contact-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-cta-box {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+  color: white;
+  padding: 2.5rem;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.contact-cta-box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-cta-box p {
+  opacity: 0.95;
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+
+.contact-cta-box ul {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.contact-cta-box ul li {
+  padding: 0.4rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.contact-cta-box ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: bold;
+}
+
+.contact-cta-box .btn {
+  width: 100%;
+  justify-content: center;
+  background: white;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact-cta-box .btn:hover {
+  background: var(--primary-subtle);
+  transform: translateY(-2px);
+}
+
 /* ---------- CONTACT / FOOTER ---------- */
 .footer {
   background: var(--text-primary);
@@ -1023,6 +1153,7 @@ img { max-width: 100%; display: block; }
   .skills-categories { grid-template-columns: 1fr; }
   .education-cards { grid-template-columns: 1fr; }
   .blog-grid { grid-template-columns: 1fr; }
+  .contact-container { grid-template-columns: 1fr; gap: 2rem; }
 
   .section { padding: 60px 0; }
   .section-title { font-size: 1.6rem; }
