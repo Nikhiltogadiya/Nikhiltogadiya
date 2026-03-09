@@ -6,6 +6,16 @@
   <title>Nikhil Togadiya — AI/ML Engineer</title>
   <meta name="description" content="Portfolio of Nikhil Togadiya — AI/ML Engineer specializing in Agentic AI, Generative AI, LLMs, RAG, and production-ready ML systems." />
   <meta name="author" content="Nikhil Togadiya" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="color-scheme" content="light dark" />
+
+  <!-- Prevent flash of wrong theme -->
+  <script>
+    (function() {
+      var t = localStorage.getItem('theme');
+      if (t === 'dark') document.documentElement.setAttribute('data-theme', 'dark');
+    })();
+  </script>
 
   <!-- Open Graph -->
   <meta property="og:title" content="Nikhil Togadiya — AI/ML Engineer" />
@@ -20,6 +30,9 @@
 
   <!-- Icons (Lucide via CDN) -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Three.js (for Neural Network Hero) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
@@ -55,6 +68,24 @@
       <button class="nav-toggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
       </button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+        <!-- Sun icon (shown in dark mode) -->
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="5"/>
+          <line x1="12" y1="1" x2="12" y2="3"/>
+          <line x1="12" y1="21" x2="12" y2="23"/>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+          <line x1="1" y1="12" x2="3" y2="12"/>
+          <line x1="21" y1="12" x2="23" y2="12"/>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+        </svg>
+        <!-- Moon icon (shown in light mode) -->
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
     </div>
   </nav>
 
@@ -63,6 +94,8 @@
        HERO SECTION
        ============================================================ -->
   <section class="hero" id="hero">
+    <!-- Three.js Neural Network Canvas -->
+    <canvas id="neural-canvas"></canvas>
     <div class="container">
       <div class="hero-content">
         <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
@@ -143,22 +176,26 @@
         </div>
 
         <div class="about-highlights fade-in-right">
-          <div class="about-highlight-card">
+          <div class="about-highlight-card tilt-card">
+            <div class="card-shine"></div>
             <div class="icon">🤖</div>
             <h4>Multi-Agent AI</h4>
             <p>Autonomous systems with tool-use orchestration</p>
           </div>
-          <div class="about-highlight-card">
+          <div class="about-highlight-card tilt-card">
+            <div class="card-shine"></div>
             <div class="icon">🧬</div>
             <h4>Generative AI</h4>
             <p>LLM fine-tuning, constrained decoding, RAG</p>
           </div>
-          <div class="about-highlight-card">
+          <div class="about-highlight-card tilt-card">
+            <div class="card-shine"></div>
             <div class="icon">🏭</div>
             <h4>Production ML</h4>
             <p>Docker, FastAPI, end-to-end pipelines</p>
           </div>
-          <div class="about-highlight-card">
+          <div class="about-highlight-card tilt-card">
+            <div class="card-shine"></div>
             <div class="icon">🤝</div>
             <h4>Industry Partners</h4>
             <p>Volkswagen, WOBCOM, Ostfalia</p>
@@ -323,6 +360,11 @@
        4. Add GitHub / Demo links in the project-links area.
        ============================================================ -->
   <section class="section section-alt" id="projects">
+    <!-- Matrix Rain Background -->
+    <div class="matrix-rain-container">
+      <canvas id="matrix-canvas"></canvas>
+    </div>
+
     <div class="container">
       <h2 class="section-title fade-in">Personal <span class="highlight">Projects</span></h2>
       <p class="section-subtitle fade-in">Side projects exploring the frontiers of AI</p>
@@ -330,7 +372,8 @@
       <div class="projects-grid">
 
         <!-- ─── Project 1: Text2CAD ─── -->
-        <div class="project-card fade-in">
+        <div class="project-card fade-in tilt-card">
+          <div class="card-shine"></div>
           <div class="project-card-header">
             <div class="project-card-icon">🏭</div>
             <h3 class="project-card-title">Text2CAD</h3>
@@ -362,7 +405,8 @@
         </div>
 
         <!-- ─── Project 2: Grizzlys Ticketing Forecast ─── -->
-        <div class="project-card fade-in">
+        <div class="project-card fade-in tilt-card">
+          <div class="card-shine"></div>
           <div class="project-card-header">
             <div class="project-card-icon">🏒</div>
             <h3 class="project-card-title">ML-Based Ticket Sales & Revenue Forecasting</h3>
@@ -440,6 +484,11 @@
        SKILLS SECTION
        ============================================================ -->
   <section class="section" id="skills">
+    <!-- Node Connections Background -->
+    <div class="skills-bg-canvas">
+      <canvas id="skills-connections"></canvas>
+    </div>
+
     <div class="container">
       <h2 class="section-title fade-in">Technical <span class="highlight">Skills</span></h2>
       <p class="section-subtitle fade-in">Technologies I work with daily</p>
@@ -565,7 +614,8 @@
 
       <div class="education-cards">
 
-        <div class="education-card fade-in">
+        <div class="education-card fade-in tilt-card">
+          <div class="card-shine"></div>
           <div class="education-icon">🎓</div>
           <div class="education-info">
             <h3>M.Sc. Digital Technology</h3>
@@ -574,7 +624,8 @@
           </div>
         </div>
 
-        <div class="education-card fade-in">
+        <div class="education-card fade-in tilt-card">
+          <div class="card-shine"></div>
           <div class="education-icon">🎓</div>
           <div class="education-info">
             <h3>Bachelor in Computer Application</h3>
@@ -681,7 +732,7 @@
         </div>
 
         <div class="contact-cta">
-          <div class="contact-cta-box">
+          <div class="contact-cta-box glow-border">
             <h3>🚀 Open to Opportunities</h3>
             <p>Currently seeking full-time roles in:</p>
             <ul>
@@ -707,7 +758,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-info">
-          <h3><span style="color:var(--primary)">&lt;</span>Nikhil Togadiya<span style="color:var(--primary)">/&gt;</span></h3>
+          <h3>&lt;Nikhil Togadiya/&gt;</h3>
           <p>AI/ML Engineer · Agentic AI & Generative AI</p>
         </div>
         <div class="footer-social">
@@ -737,6 +788,8 @@
 
   <!-- JavaScript -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/neural-network.js" defer></script>
+  <script src="assets/js/effects.js" defer></script>
   <!-- Initialize Lucide Icons -->
   <script>lucide.createIcons();</script>
 

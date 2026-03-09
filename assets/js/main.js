@@ -1,6 +1,7 @@
 /* ============================================================
    NIKHIL TOGADIYA — PORTFOLIO JAVASCRIPT
    Typing effect, scroll animations, navbar, back-to-top
+   Dark AI Theme with 3D scroll effects
    ============================================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -60,10 +61,12 @@ document.addEventListener('DOMContentLoaded', () => {
       navbar.classList.remove('scrolled');
     }
 
-    if (window.scrollY > 400) {
-      backToTop.classList.add('visible');
-    } else {
-      backToTop.classList.remove('visible');
+    if (backToTop) {
+      if (window.scrollY > 400) {
+        backToTop.classList.add('visible');
+      } else {
+        backToTop.classList.remove('visible');
+      }
     }
   });
 
@@ -107,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* -------------------- Scroll Animations -------------------- */
+  /* -------------------- Scroll Animations (3D Enhanced) -------------------- */
   const animatedElements = document.querySelectorAll('.fade-in, .fade-in-left, .fade-in-right');
 
   const observer = new IntersectionObserver(
@@ -146,14 +149,53 @@ document.addEventListener('DOMContentLoaded', () => {
 
   /* -------------------- Staggered Animation Delays -------------------- */
   document.querySelectorAll('.projects-grid .project-card').forEach((card, i) => {
-    card.style.transitionDelay = `${i * 0.1}s`;
+    card.style.transitionDelay = `${i * 0.15}s`;
   });
   document.querySelectorAll('.skills-categories .skill-category').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.1}s`;
+  });
+  document.querySelectorAll('.about-highlights .about-highlight-card').forEach((card, i) => {
+    card.style.transitionDelay = `${i * 0.12}s`;
   });
 
   /* -------------------- Year in Footer -------------------- */
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+  /* ==================== THEME TOGGLE ==================== */
+  const themeToggle = document.getElementById('theme-toggle');
+  const root = document.documentElement;
+
+  function getStoredTheme() {
+    return localStorage.getItem('theme') || 'light';
+  }
+
+  function applyTheme(theme) {
+    if (theme === 'dark') {
+      root.setAttribute('data-theme', 'dark');
+    } else {
+      root.removeAttribute('data-theme');
+    }
+    // Update meta theme-color
+    const metaTheme = document.querySelector('meta[name="theme-color"]');
+    if (metaTheme) {
+      metaTheme.setAttribute('content', theme === 'dark' ? '#0a0a1a' : '#ffffff');
+    }
+    // Dispatch custom event for Three.js / effects
+    window.dispatchEvent(new CustomEvent('themechange', { detail: { theme } }));
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      const current = root.hasAttribute('data-theme') ? 'dark' : 'light';
+      const next = current === 'dark' ? 'light' : 'dark';
+      localStorage.setItem('theme', next);
+      applyTheme(next);
+    });
+  }
+
+  // Apply stored theme (handles case where inline script in <head> already set dark)
+  const storedTheme = getStoredTheme();
+  applyTheme(storedTheme);
 
 });
