@@ -65,27 +65,29 @@
         -->
         <!-- <li><a href="assets/resume/Nikhil_Togadiya_Resume.pdf" target="_blank" class="nav-resume-btn">📄 Resume</a></li> -->
       </ul>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
-        <!-- Sun icon (shown in dark mode) -->
-        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="5"/>
-          <line x1="12" y1="1" x2="12" y2="3"/>
-          <line x1="12" y1="21" x2="12" y2="23"/>
-          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
-          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
-          <line x1="1" y1="12" x2="3" y2="12"/>
-          <line x1="21" y1="12" x2="23" y2="12"/>
-          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
-          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
-        </svg>
-        <!-- Moon icon (shown in light mode) -->
-        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
-        </svg>
-      </button>
+      <div class="nav-right">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+          <!-- Sun icon (shown in dark mode) -->
+          <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/>
+            <line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+          <!-- Moon icon (shown in light mode) -->
+          <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -176,26 +178,22 @@
         </div>
 
         <div class="about-highlights fade-in-right">
-          <div class="about-highlight-card tilt-card">
-            <div class="card-shine"></div>
+          <div class="about-highlight-card">
             <div class="icon">🤖</div>
             <h4>Multi-Agent AI</h4>
             <p>Autonomous systems with tool-use orchestration</p>
           </div>
-          <div class="about-highlight-card tilt-card">
-            <div class="card-shine"></div>
+          <div class="about-highlight-card">
             <div class="icon">🧬</div>
             <h4>Generative AI</h4>
             <p>LLM fine-tuning, constrained decoding, RAG</p>
           </div>
-          <div class="about-highlight-card tilt-card">
-            <div class="card-shine"></div>
+          <div class="about-highlight-card">
             <div class="icon">🏭</div>
             <h4>Production ML</h4>
             <p>Docker, FastAPI, end-to-end pipelines</p>
           </div>
-          <div class="about-highlight-card tilt-card">
-            <div class="card-shine"></div>
+          <div class="about-highlight-card">
             <div class="icon">🤝</div>
             <h4>Industry Partners</h4>
             <p>Volkswagen, WOBCOM, Ostfalia</p>
@@ -372,8 +370,7 @@
       <div class="projects-grid">
 
         <!-- ─── Project 1: Text2CAD ─── -->
-        <div class="project-card fade-in tilt-card">
-          <div class="card-shine"></div>
+        <div class="project-card fade-in">
           <div class="project-card-header">
             <div class="project-card-icon">🏭</div>
             <h3 class="project-card-title">Text2CAD</h3>
@@ -405,8 +402,7 @@
         </div>
 
         <!-- ─── Project 2: Grizzlys Ticketing Forecast ─── -->
-        <div class="project-card fade-in tilt-card">
-          <div class="card-shine"></div>
+        <div class="project-card fade-in">
           <div class="project-card-header">
             <div class="project-card-icon">🏒</div>
             <h3 class="project-card-title">ML-Based Ticket Sales & Revenue Forecasting</h3>
@@ -614,8 +610,7 @@
 
       <div class="education-cards">
 
-        <div class="education-card fade-in tilt-card">
-          <div class="card-shine"></div>
+        <div class="education-card fade-in">
           <div class="education-icon">🎓</div>
           <div class="education-info">
             <h3>M.Sc. Digital Technology</h3>
@@ -624,8 +619,7 @@
           </div>
         </div>
 
-        <div class="education-card fade-in tilt-card">
-          <div class="card-shine"></div>
+        <div class="education-card fade-in">
           <div class="education-icon">🎓</div>
           <div class="education-info">
             <h3>Bachelor in Computer Application</h3>

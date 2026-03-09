@@ -37,11 +37,12 @@
     light: {
       fogColor: 0xffffff,
       blending: THREE.NormalBlending,
-      particleOpacity: 0.65,
-      lineOpacity: 0.35,
-      wireframeOpacity: 0.4,
-      orbOpacity: 0.5,
-      ringOpacity: 0.08,
+      particleOpacity: 0.35,
+      lineOpacity: 0.07,
+      wireframeOpacity: 0.15,
+      orbOpacity: 0.25,
+      ringOpacity: 0.04,
+      connectionDistance: 120,
       colors: {
         cyan: 0x4f46e5,    // Indigo
         purple: 0x7c3aed,  // Violet
@@ -386,8 +387,10 @@
     let li = 0;
     const lp = lineGeom.attributes.position.array;
     const lc = lineGeom.attributes.color.array;
-    const cyanCol = new THREE.Color(getTheme().colors.cyan);
-    const purpleCol = new THREE.Color(getTheme().colors.purple);
+    const curTheme = getTheme();
+    const cyanCol = new THREE.Color(curTheme.colors.cyan);
+    const purpleCol = new THREE.Color(curTheme.colors.purple);
+    const connDist = curTheme.connectionDistance || CONFIG.connectionDistance;
 
     for (let i = 0; i < pCount; i++) {
       for (let j = i + 1; j < pCount; j++) {
@@ -398,11 +401,11 @@
         const dz = pos[i3 + 2] - pos[j3 + 2];
         const dist = Math.sqrt(dx * dx + dy * dy + dz * dz);
 
-        if (dist < CONFIG.connectionDistance) {
-          const alpha = 1 - dist / CONFIG.connectionDistance;
+        if (dist < connDist) {
+          const alpha = 1 - dist / connDist;
           const idx = li * 6;
           // Mix cyan → purple based on distance
-          const mixCol = cyanCol.clone().lerp(purpleCol, dist / CONFIG.connectionDistance);
+          const mixCol = cyanCol.clone().lerp(purpleCol, dist / connDist);
 
           lp[idx] = pos[i3]; lp[idx + 1] = pos[i3 + 1]; lp[idx + 2] = pos[i3 + 2];
           lp[idx + 3] = pos[j3]; lp[idx + 4] = pos[j3 + 1]; lp[idx + 5] = pos[j3 + 2];
@@ -419,6 +422,7 @@
     lineGeom.setDrawRange(0, li * 2);
 
     /* -- Rotate wireframe geometries -- */
+    const wfBase = curTheme.wireframeOpacity;
     wireframeMeshes.forEach((mesh) => {
       const d = mesh.userData;
       mesh.rotation.x += d.rotSpeedX;
@@ -426,16 +430,17 @@
       mesh.rotation.z += d.rotSpeedZ;
       // Float up and down
       mesh.position.y = d.baseY + Math.sin(t * d.floatSpeed + d.floatPhase) * d.floatAmp;
-      // Pulse opacity
-      mesh.material.opacity = 0.3 + Math.sin(t * d.pulseSpeed) * 0.2;
+      // Pulse opacity (theme-aware)
+      mesh.material.opacity = wfBase * (0.6 + Math.sin(t * d.pulseSpeed) * 0.4);
     });
 
     /* -- Animate glow orbs -- */
+    const orbBase = curTheme.orbOpacity;
     glowOrbs.forEach((orb) => {
       const d = orb.userData;
       orb.position.x += Math.sin(t * d.speed + d.phase) * 0.4;
       orb.position.y += Math.cos(t * d.speed * 0.7 + d.phase) * 0.4;
-      orb.material.opacity = 0.4 + Math.sin(t * 2 + d.phase) * 0.35;
+      orb.material.opacity = orbBase * (0.6 + Math.sin(t * 2 + d.phase) * 0.4);
       const s = 0.8 + Math.sin(t * 1.5 + d.phase) * 0.5;
       orb.scale.set(s, s, s);
     });
