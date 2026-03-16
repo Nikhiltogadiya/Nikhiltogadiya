@@ -212,14 +212,14 @@ const translations = {
     'exp1.p2': '<strong>pytemi</strong> geschrieben, eine Python-Bibliothek, die die Temi-REST-API für Navigation, Sensoren und Robotersteuerung kapselt. Wurde zum Fundament des gesamten Projekts.',
     'exp1.p3': 'Das Team bei RAG-Tuning und Multi-Roboter-Übergabeprotokollen betreut. Koordiniere die Integration Richtung Produktionseinsatz.',
 
-    'exp2.role':    'Bildungsprojekt — Eingeschränkte LLM-Testgenerierung',
+    'exp2.role':    'Eingeschränkte LLM-Testgenerierung',
     'exp2.date':    '03/2025 – 07/2025',
     'exp2.location':'📍 Wolfsburg, Deutschland',
     'exp2.p1': 'Zweistufiges Framework gebaut, das LLM-Ausgaben per DFA-basierter Token-Maskierung (Syncode) an eine formale Grammatik (.lark DSL) bindet. Ergebnis: generierte Testfälle, die jedes Mal syntaktisch korrekt sind.',
     'exp2.p2': 'LLaMA 3B und 8B mit LoRA fine-getuned, damit das Modell die Zuordnung von Anforderungsbeschreibungen zu Testschritten wirklich versteht. Beide Größen verglichen, um den Sweet Spot zwischen Qualität und Kosten zu finden.',
     'exp2.p3': 'Ausgabequalität mit BLEU, SacreBLEU und ROUGE-L gegen menschlich geschriebene Referenztests gemessen. Sowohl strukturelle Korrektheit als auch Bedeutungstreue geprüft.',
 
-    'exp3.role':    'Bildungsprojekt — Energie-Zeitreihenprognose',
+    'exp3.role':    'Energie-Zeitreihenprognose',
     'exp3.date':    '03/2024 – 07/2024',
     'exp3.location':'📍 Wolfsburg, Deutschland',
     'exp3.p1': 'RNN-, LSTM- und GRU-Modelle in TensorFlow auf multivariaten Smart-Meter-Daten trainiert und verglichen. Beste Architektur anhand von MAE und RMSE ausgewählt.',
