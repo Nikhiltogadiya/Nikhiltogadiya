@@ -97,6 +97,13 @@ const translations = {
     'proj4.p2': 'Designed and implemented an end-to-end ML pipeline, including data preprocessing, feature engineering, sequence modeling, model validation, and RESTful API deployment with FastAPI for real-time inference.',
     'proj4.p3': 'Containerized and deployed the ML application using Docker on a local server, enabling scalable prediction services and supporting data-driven energy management decisions.',
 
+    'proj5.title':    'ROS2 TurtleBot3 – Camera-Based Navigation & Sokoban Puzzle Solving',
+    'proj5.subtitle': 'Autonomous robot navigation with computer vision, BFS grid traversal, and A* Sokoban puzzle solving in ROS 2',
+    'proj5.p1': 'Developed a camera-based navigation and control system for a TurtleBot3 robot in ROS 2 Humble, integrating sensor fusion and real-time velocity control.',
+    'proj5.p2': 'Implemented a computer vision module using OpenCV for lane detection and real-time image processing for lane centering.',
+    'proj5.p3': 'Realized autonomous grid navigation using BFS and an A*-based Sokoban puzzle solver with path planning and obstacle avoidance.',
+    'proj5.p4': 'Integrated odometry, camera data, and velocity control in a modular ROS 2 architecture.',
+
     /* Skills */
     'skills.title':    'Technical',
     'skills.title.hl': 'Skills',
@@ -235,6 +242,13 @@ const translations = {
     'proj4.p1': 'Entwicklung und Optimierung von Deep-Learning-Modellen (RNN, LSTM, GRU) in TensorFlow für die multivariate Zeitreihenprognose von Smart-Meter-Energiedaten; Leistungsbewertung mit MAE und RMSE und Auswahl der besten Architektur.',
     'proj4.p2': 'Konzeption und Implementierung einer End-to-End-ML-Pipeline einschließlich Datenvorverarbeitung, Feature Engineering, Sequenzmodellierung, Modellvalidierung und RESTful-API-Deployment mit FastAPI für Echtzeit-Inferenz.',
     'proj4.p3': 'Containerisierung und Deployment der ML-Anwendung mit Docker auf einem lokalen Server, um skalierbare Prognosedienste zu ermöglichen und datengetriebene Energiemanagement-Entscheidungen zu unterstützen.',
+
+    'proj5.title':    'ROS2 TurtleBot3 – Kamerabasierte Navigation & Sokoban-Puzzlelösung',
+    'proj5.subtitle': 'Autonome Roboternavigation mit Computer Vision, BFS-Gitterfahrt und A*-basierter Sokoban-Puzzlelösung in ROS 2',
+    'proj5.p1': 'Entwicklung eines kamerabasierten Navigations- und Steuerungssystems für einen TurtleBot3-Roboter in ROS 2 Humble mit Sensorfusion und Echtzeit-Geschwindigkeitssteuerung.',
+    'proj5.p2': 'Implementierung eines Computer-Vision-Moduls mit OpenCV für Spurerkennung und Echtzeit-Bildverarbeitung zur Spurzentrierung.',
+    'proj5.p3': 'Realisierung autonomer Gridnavigation mittels BFS-Algorithmus sowie einer A*-basierten Sokoban-Puzzlelösung mit Pfadplanung und Hindernisumgehung.',
+    'proj5.p4': 'Integration von Odometrie-Daten, Kameradaten und Geschwindigkeitssteuerung in einer modularen ROS 2-Architektur.',
 
     /* Skills */
     'skills.title':    'Technische',
