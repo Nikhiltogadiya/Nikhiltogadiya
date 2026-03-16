@@ -56,14 +56,14 @@ const translations = {
     'exp1.p2': 'Wrote <strong>pytemi</strong>, a Python library that wraps the Temi REST API for navigation, sensors, and robot control. It became the foundation the whole project runs on.',
     'exp1.p3': 'Mentored the team on RAG tuning and multi-robot handover protocols. Coordinating the push toward production deployment.',
 
-    'exp2.role':    'Educational Project — Constrained LLM Test Generation',
+    'exp2.role':    'Constrained LLM Test Generation',
     'exp2.date':    '03/2025 – 07/2025',
     'exp2.location':'📍 Wolfsburg, Germany',
     'exp2.p1': 'Built a two-stage framework that forces LLM outputs to follow a formal grammar (.lark DSL) using DFA-based token masking (Syncode). The result: generated test cases that are syntactically correct every time.',
     'exp2.p2': 'Fine-tuned LLaMA 3B and 8B with LoRA so the model actually understands the mapping from requirement descriptions to test steps. Compared both sizes to find the sweet spot between quality and cost.',
     'exp2.p3': 'Measured output quality with BLEU, SacreBLEU, and ROUGE-L against human-written reference tests. Benchmarked both structural validity and how well the meaning carries over.',
 
-    'exp3.role':    'Educational Project — Energy Time Series Forecasting',
+    'exp3.role':    'Energy Time Series Forecasting',
     'exp3.date':    '03/2024 – 07/2024',
     'exp3.location':'📍 Wolfsburg, Germany',
     'exp3.p1': 'Trained and compared RNN, LSTM, and GRU models in TensorFlow on multivariate smart meter data. Picked the best architecture based on MAE and RMSE.',
