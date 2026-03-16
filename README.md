@@ -119,15 +119,21 @@ I like taking ideas from research papers and making them actually work. If it's 
 ## 📊 GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Nikhiltogadiya&show_icons=true&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=CBD5E1&bg_color=00000000#gh-dark-mode-only" height="170" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api?username=Nikhiltogadiya&show_icons=true&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=00000000#gh-light-mode-only" height="170" alt="GitHub Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nikhiltogadiya&hide_border=true&ring=3B82F6&fire=F59E0B&currStreakNum=CBD5E1&currStreakLabel=3B82F6&sideNums=CBD5E1&sideLabels=CBD5E1&dates=94A3B8&background=00000000#gh-dark-mode-only" height="170" alt="Streak Stats" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Nikhiltogadiya&hide_border=true&ring=3B82F6&fire=F59E0B&currStreakNum=1E293B&currStreakLabel=3B82F6&sideNums=1E293B&sideLabels=1E293B&dates=64748B&background=00000000#gh-light-mode-only" height="170" alt="Streak Stats" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=Nikhiltogadiya&show_icons=true&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=00000000" />
+    <img height="170" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=Nikhiltogadiya&show_icons=true&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=00000000" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=Nikhiltogadiya&hide_border=true&ring=3B82F6&fire=F59E0B&currStreakNum=E2E8F0&currStreakLabel=3B82F6&sideNums=E2E8F0&sideLabels=CBD5E1&dates=94A3B8&background=00000000" />
+    <img height="170" alt="Streak Stats" src="https://github-readme-streak-stats.herokuapp.com/?user=Nikhiltogadiya&hide_border=true&ring=3B82F6&fire=F59E0B&currStreakNum=1E293B&currStreakLabel=3B82F6&sideNums=1E293B&sideLabels=1E293B&dates=64748B&background=00000000" />
+  </picture>
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikhiltogadiya&layout=compact&hide_border=true&title_color=3B82F6&text_color=CBD5E1&bg_color=00000000#gh-dark-mode-only" height="150" alt="Top Languages" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikhiltogadiya&layout=compact&hide_border=true&title_color=3B82F6&text_color=1E293B&bg_color=00000000#gh-light-mode-only" height="150" alt="Top Languages" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikhiltogadiya&layout=compact&hide_border=true&title_color=3B82F6&text_color=E2E8F0&bg_color=00000000" />
+    <img height="150" alt="Top Languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Nikhiltogadiya&layout=compact&hide_border=true&title_color=3B82F6&text_color=1E293B&bg_color=00000000" />
+  </picture>
 </div>
 
 ---
@@ -135,8 +141,10 @@ I like taking ideas from research papers and making them actually work. If it's 
 ## 🏆 GitHub Trophies
 
 <div align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Nikhiltogadiya&theme=darkhub&no-bg=true&no-frame=true&column=7#gh-dark-mode-only" alt="Trophies" />
-  <img src="https://github-profile-trophy.vercel.app/?username=Nikhiltogadiya&theme=flat&no-bg=true&no-frame=true&column=7&title_color=3B82F6#gh-light-mode-only" alt="Trophies" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=Nikhiltogadiya&theme=darkhub&no-bg=true&no-frame=true&column=7" />
+    <img alt="Trophies" src="https://github-profile-trophy.vercel.app/?username=Nikhiltogadiya&theme=flat&no-bg=true&no-frame=true&column=7&title_color=3B82F6" />
+  </picture>
 </div>
 
 ---
@@ -144,8 +152,10 @@ I like taking ideas from research papers and making them actually work. If it's 
 ## 📈 Contribution Graph
 
 <div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Nikhiltogadiya&theme=react-dark&hide_border=true&area=true#gh-dark-mode-only" width="95%" alt="Activity Graph" />
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Nikhiltogadiya&theme=minimal&hide_border=true&color=3B82F6&line=3B82F6&point=F59E0B&area_color=DBEAFE&area=true#gh-light-mode-only" width="95%" alt="Activity Graph" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=Nikhiltogadiya&theme=react-dark&hide_border=true&area=true" />
+    <img width="95%" alt="Activity Graph" src="https://github-readme-activity-graph.vercel.app/graph?username=Nikhiltogadiya&theme=minimal&hide_border=true&color=3B82F6&line=3B82F6&point=F59E0B&area_color=DBEAFE&area=true" />
+  </picture>
 </div>
 
 ---
