@@ -1110,7 +1110,6 @@ img { max-width: 100%; display: block; }
 /* Tags now live in the header — give them breathing room */
 .project-card-header .project-tags {
   margin-top: 0.9rem;
-  padding-bottom: 0.2rem;
 }
 .project-card-icon {
   font-size: 2.5rem;
@@ -1186,7 +1185,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.8rem;
   font-weight: 600;
   cursor: pointer;
-  padding: 0.4rem 0 0.8rem 0;
+  padding: 0;
   transition: color 0.2s ease;
   font-family: var(--font-mono, 'Fira Code', monospace);
 }
@@ -1200,15 +1199,13 @@ img { max-width: 100%; display: block; }
   transform: rotate(180deg);
 }
 
-.project-card-footer {
-  padding: 0.8rem 2rem 1.2rem;
+.project-card-actions {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-}
-/* Hide footer entirely when it has no content */
-.project-card-footer:empty {
-  display: none;
+  justify-content: space-between;
+  margin-top: 1rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
 }
 
 .project-tags {
