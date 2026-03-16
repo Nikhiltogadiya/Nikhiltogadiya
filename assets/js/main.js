@@ -89,6 +89,16 @@ document.addEventListener('DOMContentLoaded', () => {
       langToggleBtn.textContent = lang === 'de' ? '🇩🇪 DE' : '🇬🇧 EN';
     }
 
+    // Update project card toggle button labels to match new language
+    document.querySelectorAll('.project-card').forEach(card => {
+      const label = card.querySelector('[data-toggle-label]');
+      if (!label) return;
+      const isExpanded = card.classList.contains('expanded');
+      label.textContent = isExpanded
+        ? (lang === 'de' ? 'Weniger' : 'Less')
+        : (lang === 'de' ? 'Details' : 'Details');
+    });
+
     // Restart typing animation with new language phrases
     startTyping(lang);
   }
@@ -197,6 +207,24 @@ document.addEventListener('DOMContentLoaded', () => {
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }
+    });
+  });
+
+  /* -------------------- Collapsible Project Cards -------------------- */
+  document.querySelectorAll('.project-card').forEach(card => {
+    const header = card.querySelector('.project-card-header');
+    if (!header) return;
+
+    const btn = document.createElement('button');
+    btn.className = 'project-card-toggle';
+    btn.innerHTML = `<span data-toggle-label>Details</span><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>`;
+    header.appendChild(btn);
+
+    btn.addEventListener('click', () => {
+      const isExpanded = card.classList.toggle('expanded');
+      btn.querySelector('[data-toggle-label]').textContent = isExpanded
+        ? (currentLang === 'de' ? 'Weniger' : 'Less')
+        : (currentLang === 'de' ? 'Details' : 'Details');
     });
   });
 

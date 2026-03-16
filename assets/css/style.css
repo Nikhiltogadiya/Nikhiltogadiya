@@ -1142,8 +1142,14 @@ img { max-width: 100%; display: block; }
 }
 
 .project-card-body {
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.4s ease;
+}
+.project-card.expanded .project-card-body {
+  max-height: 800px;
   padding: 0 2rem 1.5rem;
-  flex: 1;
 }
 .project-card-body ul {
   list-style: none;
@@ -1163,6 +1169,30 @@ img { max-width: 100%; display: block; }
   left: 0;
   color: var(--glow-green);
   font-weight: 700;
+}
+
+.project-card-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  color: var(--glow-cyan);
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.4rem 0 0.8rem 0;
+  transition: color 0.2s ease;
+  font-family: var(--font-mono, 'Fira Code', monospace);
+}
+.project-card-toggle:hover {
+  color: var(--glow-purple);
+}
+.project-card-toggle svg {
+  transition: transform 0.35s ease;
+}
+.project-card.expanded .project-card-toggle svg {
+  transform: rotate(180deg);
 }
 
 .project-card-footer {
