@@ -76,7 +76,7 @@ const translations = {
     'proj.subtitle': 'Things I built because I was curious',
 
     'proj1.subtitle': 'Multi-Agent LLM System for 3D CAD Generation',
-    'proj1.p1': 'Built a pipeline that takes a text description and produces a manufacturable 3D CAD model. Four agents handle it (requirements, planning, code generation, and verification) with automatic error-correction loops when something fails.',
+    'proj1.p1': 'Built a pipeline that takes a text description and produces a manufacturable 3D CAD model. A multi-agent system handles it (requirements, planning, code generation, and verification) with automatic error-correction loops when something fails.',
     'proj1.p2': 'Added a design memory layer (ChromaDB + RAG) so the system learns from past successes and reuses working patterns instead of starting from scratch every time.',
     'proj1.p3': 'Runs CadQuery in a sandbox, verifies outputs with a Vision-Language Model, and exports STL/STEP files. Available as both a Flask web UI and CLI.',
 
@@ -108,8 +108,8 @@ const translations = {
     'proj5.p4': 'Tied together odometry, camera feeds, and velocity commands in a clean modular ROS 2 architecture.',
 
     'proj6.title':    'Autonomous Driving – Project Collection',
-    'proj6.subtitle': 'Three mini-projects: Deep RL highway driving, LiDAR sensor fusion, and adaptive cruise control',
-    'proj6.p1': '<strong>PPO Highway Driving:</strong> Trained a PPO agent in highway-env (Gymnasium) that learns to drive on its own. It dodges collisions, stays in lane, and hits the target speed using actor-critic networks.',
+    'proj6.subtitle': 'Three mini-projects: deep reinforcement learning for highway driving, LiDAR sensor fusion, and adaptive cruise control',
+    'proj6.p1': '<strong>Deep RL Highway Driving:</strong> Trained an agent using deep reinforcement learning (PPO) in highway-env (Gymnasium) that learns to drive on its own. It dodges collisions, stays in lane, and hits the target speed using actor-critic networks.',
     'proj6.p2': '<strong>Sensor Fusion (Dempster-Shafer):</strong> Built a LiDAR occupancy grid using Dempster-Shafer theory to label each cell as occupied, free, or unknown. Handles noisy sensor data gracefully in ROS 2 / Webots.',
     'proj6.p3': '<strong>Adaptive Cruise Control (IDM):</strong> Built a longitudinal ACC system with the Intelligent Driver Model and radar data. It keeps a safe following distance and adjusts speed automatically.',
 
@@ -232,7 +232,7 @@ const translations = {
     'proj.subtitle': 'Projekte, die aus Neugier entstanden sind',
 
     'proj1.subtitle': 'Multi-Agenten-LLM-System zur 3D-CAD-Generierung',
-    'proj1.p1': 'Pipeline gebaut, die aus einer Textbeschreibung ein fertigungsreifes 3D-CAD-Modell erzeugt. Vier Agenten übernehmen das (Anforderungen, Planung, Code-Generierung und Verifikation) mit automatischen Fehlerkorrekturschleifen.',
+    'proj1.p1': 'Pipeline gebaut, die aus einer Textbeschreibung ein fertigungsreifes 3D-CAD-Modell erzeugt. Ein Multi-Agenten-System übernimmt das (Anforderungen, Planung, Code-Generierung und Verifikation) mit automatischen Fehlerkorrekturschleifen.',
     'proj1.p2': 'Design-Memory-Schicht ergänzt (ChromaDB + RAG), damit das System aus vergangenen Erfolgen lernt und funktionierende Muster wiederverwendet, statt jedes Mal von vorn anzufangen.',
     'proj1.p3': 'Führt CadQuery in einer Sandbox aus, prüft Ergebnisse mit einem Vision-Language-Model und exportiert STL/STEP-Dateien. Verfügbar als Flask-Web-UI und CLI.',
 
@@ -264,8 +264,8 @@ const translations = {
     'proj5.p4': 'Odometrie, Kamera-Feeds und Geschwindigkeitsbefehle in einer sauberen modularen ROS 2-Architektur zusammengeführt.',
 
     'proj6.title':    'Autonomes Fahren – Projektsammlung',
-    'proj6.subtitle': 'Drei Mini-Projekte: Deep-RL-Autobahnfahren, LiDAR-Sensorfusion und adaptiver Tempomat',
-    'proj6.p1': '<strong>PPO Autobahnfahren:</strong> PPO-Agenten in highway-env (Gymnasium) trainiert, der selbstständig fährt. Er weicht Kollisionen aus, hält die Spur und erreicht die Zielgeschwindigkeit mit Actor-Critic-Netzwerken.',
+    'proj6.subtitle': 'Drei Mini-Projekte: Deep Reinforcement Learning für Autobahnfahren, LiDAR-Sensorfusion und adaptiver Tempomat',
+    'proj6.p1': '<strong>Deep-RL-Autobahnfahren:</strong> Agenten mit Deep Reinforcement Learning (PPO) in highway-env (Gymnasium) trainiert, der selbstständig fährt. Er weicht Kollisionen aus, hält die Spur und erreicht die Zielgeschwindigkeit mit Actor-Critic-Netzwerken.',
     'proj6.p2': '<strong>Sensorfusion (Dempster-Shafer):</strong> LiDAR-Belegungsgitter mit Dempster-Shafer-Theorie gebaut, das jede Zelle als belegt, frei oder unbekannt einstuft. Kommt mit verrauschten Sensordaten in ROS 2 / Webots gut klar.',
     'proj6.p3': '<strong>Adaptiver Tempomat (IDM):</strong> Längsregelungs-ACC mit dem Intelligent Driver Model und Radardaten gebaut. Hält sicheren Abstand und passt die Geschwindigkeit automatisch an.',
 
