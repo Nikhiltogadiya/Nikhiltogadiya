@@ -45,8 +45,8 @@
   <!-- Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css" />
 
-  <!-- Favicon (GitHub avatar) -->
-  <link rel="icon" href="https://github.com/Nikhiltogadiya.png" type="image/png" />
+  <!-- Favicon (set dynamically: local upload first, GitHub fallback) -->
+  <link rel="icon" href="https://github.com/Nikhiltogadiya.png" type="image/png" id="site-favicon" />
 </head>
 <body>
 
@@ -145,12 +145,12 @@
         <div class="hero-avatar-wrapper">
           <!--
             ╔══════════════════════════════════════════════════════╗
-            ║  PROFILE PHOTO                                      ║
-            ║  Replace the src below with your own photo URL.      ║
-            ║  Currently using your GitHub avatar.                 ║
+            ║  PROFILE PHOTO                                       ║
+            ║  Upload your photo as: assets/profile-photo.jpg      ║
+            ║  If missing, GitHub avatar is used automatically.    ║
             ╚══════════════════════════════════════════════════════╝
           -->
-          <img src="https://github.com/Nikhiltogadiya.png" alt="Nikhil Togadiya" />
+          <img id="profile-photo" src="https://github.com/Nikhiltogadiya.png" alt="Nikhil Togadiya" />
         </div>
       </div>
     </div>

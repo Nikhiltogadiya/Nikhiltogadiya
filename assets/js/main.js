@@ -6,6 +6,33 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+  /* -------------------- Profile Photo (local first, GitHub fallback) -------------------- */
+  const LOCAL_PROFILE_PHOTO = 'assets/profile-photo.jpg';
+  const GITHUB_PROFILE_PHOTO = 'https://github.com/Nikhiltogadiya.png';
+
+  function applyProfilePhoto(url) {
+    const profilePhoto = document.getElementById('profile-photo');
+    const favicon = document.getElementById('site-favicon');
+
+    if (profilePhoto) {
+      profilePhoto.src = url;
+      profilePhoto.onerror = () => {
+        if (profilePhoto.src !== GITHUB_PROFILE_PHOTO) {
+          profilePhoto.src = GITHUB_PROFILE_PHOTO;
+        }
+      };
+    }
+
+    if (favicon) {
+      favicon.setAttribute('href', url);
+    }
+  }
+
+  const photoProbe = new Image();
+  photoProbe.onload = () => applyProfilePhoto(LOCAL_PROFILE_PHOTO);
+  photoProbe.onerror = () => applyProfilePhoto(GITHUB_PROFILE_PHOTO);
+  photoProbe.src = LOCAL_PROFILE_PHOTO;
+
   /* ==================== LANGUAGE / i18n ==================== */
   const langToggleBtn = document.getElementById('lang-toggle');
   let currentLang = localStorage.getItem('lang') || 'en';
