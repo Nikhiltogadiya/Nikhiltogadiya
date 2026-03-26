@@ -140,6 +140,75 @@ document.addEventListener('DOMContentLoaded', () => {
   // Apply stored/default language on load
   setLanguage(currentLang);
 
+  /* -------------------- Social Icon Fallbacks -------------------- */
+  // Some CDN Lucide builds do not expose brand icons. Replace unresolved
+  // placeholders with inline SVG so GitHub/LinkedIn always render.
+  function createBrandIcon(name, width, height) {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('xmlns', svgNS);
+    svg.setAttribute('width', String(width));
+    svg.setAttribute('height', String(height));
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('stroke-width', '2');
+    svg.setAttribute('stroke-linecap', 'round');
+    svg.setAttribute('stroke-linejoin', 'round');
+    svg.setAttribute('class', `lucide lucide-${name}`);
+
+    if (name === 'linkedin') {
+      const path = document.createElementNS(svgNS, 'path');
+      path.setAttribute('d', 'M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z');
+      const rect = document.createElementNS(svgNS, 'rect');
+      rect.setAttribute('x', '2');
+      rect.setAttribute('y', '9');
+      rect.setAttribute('width', '4');
+      rect.setAttribute('height', '12');
+      const circle = document.createElementNS(svgNS, 'circle');
+      circle.setAttribute('cx', '4');
+      circle.setAttribute('cy', '4');
+      circle.setAttribute('r', '2');
+      svg.append(path, rect, circle);
+      return svg;
+    }
+
+    if (name === 'github') {
+      const path1 = document.createElementNS(svgNS, 'path');
+      path1.setAttribute('d', 'M9 19c-5 1.5-5-2.5-7-3');
+      const path2 = document.createElementNS(svgNS, 'path');
+      path2.setAttribute('d', 'M22 16.92V19a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-4.19-3.33 2 2 0 0 1-.42-2.64A10 10 0 1 1 22 16.92z');
+      const path3 = document.createElementNS(svgNS, 'path');
+      path3.setAttribute('d', 'M14.83 13.17a4 4 0 0 0-5.66 0');
+      svg.append(path1, path2, path3);
+      return svg;
+    }
+
+    return null;
+  }
+
+  function applySocialIconFallbacks() {
+    const targets = document.querySelectorAll('i[data-lucide="linkedin"], i[data-lucide="github"]');
+    targets.forEach((placeholder) => {
+      const name = placeholder.getAttribute('data-lucide');
+      const width = parseInt(placeholder.style.width, 10) || 24;
+      const height = parseInt(placeholder.style.height, 10) || 24;
+      const replacement = createBrandIcon(name, width, height);
+      if (!replacement) return;
+
+      if (placeholder.getAttribute('style')) {
+        replacement.setAttribute('style', placeholder.getAttribute('style'));
+      }
+      if (placeholder.className) {
+        replacement.setAttribute('class', `${replacement.getAttribute('class')} ${placeholder.className}`.trim());
+      }
+
+      placeholder.replaceWith(replacement);
+    });
+  }
+
+  applySocialIconFallbacks();
+
   /* -------------------- Navbar Scroll -------------------- */
   const navbar = document.querySelector('.navbar');
   const backToTop = document.querySelector('.back-to-top');
