@@ -97,7 +97,7 @@ const translations = {
     'proj2.p4': 'Serves predictions through a FastAPI API with a React dashboard for what-if scenarios.',
 
     'proj3.title':    'Constrained LLM Test Generation',
-    'proj3.subtitle': 'Making LLMs generate syntactically valid test cases using formal grammar constraints',
+    'proj3.subtitle': 'Fine-tuning LLMs generate syntactically valid test cases using formal grammar constraints',
     'proj3.date':     '03/2025 – 07/2025',
     'proj3.p1': 'Built a two-stage framework forcing LLM outputs to follow a formal grammar (.lark DSL) via DFA based token masking (Syncode).',
     'proj3.p2': 'The result: every generated test case is syntactically valid, enforced by the constrained decoder.',
@@ -312,7 +312,7 @@ const translations = {
     'proj2.p4': 'Liefert Vorhersagen über eine FastAPI API mit React Dashboard für Was wäre wenn Szenarien.',
 
     'proj3.title':    'Eingeschränkte LLM Testgenerierung',
-    'proj3.subtitle': 'LLMs dazu bringen, syntaktisch korrekte Testfälle mit formalen Grammatik Constraints zu generieren',
+    'proj3.subtitle': 'Finetuning von LLMs erzeugt syntaktisch gültige Testfälle unter Verwendung formaler Grammatikbeschränkungen',
     'proj3.date':     '03/2025 – 07/2025',
     'proj3.p1': 'Zweistufiges Framework gebaut, das LLM Ausgaben per DFA basierter Token-Maskierung (Syncode) an eine formale Grammatik (.lark DSL) bindet.',
     'proj3.p2': 'Ergebnis: jeder generierte Testfall ist syntaktisch korrekt, sichergestellt durch den Constrained Decoder.',
