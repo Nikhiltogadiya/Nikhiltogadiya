@@ -38,50 +38,50 @@
 <a href="https://github.com/Nikhiltogadiya/Text2CAD">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Text2CAD&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Text2CAD&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="Text2CAD" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Text2CAD&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 <a href="https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Autonomous-Driving-Projects&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Autonomous-Driving-Projects&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="Autonomous Driving Projects" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Autonomous-Driving-Projects&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 <a href="https://github.com/Nikhiltogadiya/approbation-ai">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=approbation-ai&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=approbation-ai&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="approbation-ai" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=approbation-ai&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 <a href="https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=ros2_humble_grid_sokoban&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=ros2_humble_grid_sokoban&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="ROS 2 Grid Sokoban" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=ros2_humble_grid_sokoban&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 <a href="https://github.com/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=seq2seq-bahdanau-attention-beam-search&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=seq2seq-bahdanau-attention-beam-search&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="Seq2Seq Bahdanau Attention" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=seq2seq-bahdanau-attention-beam-search&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 <a href="https://github.com/Nikhiltogadiya/lstm-from-first-principles">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=lstm-from-first-principles&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=lstm-from-first-principles&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="LSTM from First Principles" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=lstm-from-first-principles&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 <a href="https://github.com/Nikhiltogadiya/grizzlys-ticketing-forecast">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=grizzlys-ticketing-forecast&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=grizzlys-ticketing-forecast&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
+    <img alt="Grizzlys Ticketing Forecast" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=grizzlys-ticketing-forecast&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
   </picture>
 </a>
 
 </div>
 
-| | Project | What it does |
-|---|---------|-------------|
+| &nbsp; | Project | What it does |
+| --- | ------- | ------------ |
 | 🏭 | [Text2CAD](https://github.com/Nikhiltogadiya/Text2CAD) | Multi-agent pipeline converting natural language into manufacturable 3D CAD models |
 | 🚙 | [Autonomous Driving Projects](https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects) | Deep RL, sensor fusion & adaptive cruise control mini-projects |
 | 🤖 | [approbation-ai](https://github.com/Nikhiltogadiya/approbation-ai) | AI-powered multi-agent system for document approval workflows |
