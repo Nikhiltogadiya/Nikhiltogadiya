@@ -33,62 +33,87 @@
 
 ## 🚀 Featured Projects
 
-<div align="center">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-<a href="https://github.com/Nikhiltogadiya/Text2CAD">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Text2CAD&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="Text2CAD" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Text2CAD&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
-<a href="https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Autonomous-Driving-Projects&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="Autonomous Driving Projects" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=Autonomous-Driving-Projects&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
-<a href="https://github.com/Nikhiltogadiya/approbation-ai">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=approbation-ai&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="approbation-ai" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=approbation-ai&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
-<a href="https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=ros2_humble_grid_sokoban&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="ROS 2 Grid Sokoban" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=ros2_humble_grid_sokoban&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
-<a href="https://github.com/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=seq2seq-bahdanau-attention-beam-search&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="Seq2Seq Bahdanau Attention" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=seq2seq-bahdanau-attention-beam-search&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
-<a href="https://github.com/Nikhiltogadiya/lstm-from-first-principles">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=lstm-from-first-principles&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="LSTM from First Principles" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=lstm-from-first-principles&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
-<a href="https://github.com/Nikhiltogadiya/grizzlys-ticketing-forecast">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=grizzlys-ticketing-forecast&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=E2E8F0&bg_color=0D1117" />
-    <img alt="Grizzlys Ticketing Forecast" src="https://github-readme-stats.vercel.app/api/pin/?username=Nikhiltogadiya&repo=grizzlys-ticketing-forecast&hide_border=true&title_color=3B82F6&icon_color=F59E0B&text_color=1E293B&bg_color=FFFFFF" />
-  </picture>
-</a>
+🏭 **[Text2CAD](https://github.com/Nikhiltogadiya/Text2CAD)**
+Multi-agent pipeline converting plain text into manufacturable 3D CAD models
 
-</div>
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/Text2CAD?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/Text2CAD?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/Text2CAD?style=flat-square&color=6366F1&labelColor=1E293B)
 
-| &nbsp; | Project | What it does |
-| --- | ------- | ------------ |
-| 🏭 | [Text2CAD](https://github.com/Nikhiltogadiya/Text2CAD) | Multi-agent pipeline converting natural language into manufacturable 3D CAD models |
-| 🚙 | [Autonomous Driving Projects](https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects) | Deep RL, sensor fusion & adaptive cruise control mini-projects |
-| 🤖 | [approbation-ai](https://github.com/Nikhiltogadiya/approbation-ai) | AI-powered multi-agent system for document approval workflows |
-| 🎮 | [ROS 2 Grid Sokoban](https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban) | Camera-based ROS 2 robot navigating and solving a Sokoban grid puzzle |
-| 🔤 | [Seq2Seq + Bahdanau Attention](https://github.com/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search) | Sequence-to-sequence model with Bahdanau attention and beam search decoding |
-| 🧠 | [LSTM from First Principles](https://github.com/Nikhiltogadiya/lstm-from-first-principles) | LSTM built entirely from scratch — no frameworks, just math |
-| 🏒 | [Grizzlys Ticketing Forecast](https://github.com/Nikhiltogadiya/grizzlys-ticketing-forecast) | ML-based ticket sales forecasting for a professional ice hockey team |
+</td>
+<td width="50%" valign="top">
+
+🚙 **[Autonomous Driving Projects](https://github.com/Nikhiltogadiya/Autonomous-Driving-Projects)**
+Deep RL, sensor fusion & adaptive cruise control mini-projects
+
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/Autonomous-Driving-Projects?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/Autonomous-Driving-Projects?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/Autonomous-Driving-Projects?style=flat-square&color=6366F1&labelColor=1E293B)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+🤖 **[approbation-ai](https://github.com/Nikhiltogadiya/approbation-ai)**
+AI-powered multi-agent system for document approval workflows
+
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/approbation-ai?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/approbation-ai?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/approbation-ai?style=flat-square&color=6366F1&labelColor=1E293B)
+
+</td>
+<td width="50%" valign="top">
+
+🎮 **[ROS 2 Grid Sokoban](https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban)**
+Camera-based ROS 2 robot navigating and solving a Sokoban grid puzzle
+
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/ros2_humble_grid_sokoban?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/ros2_humble_grid_sokoban?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/ros2_humble_grid_sokoban?style=flat-square&color=6366F1&labelColor=1E293B)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+🔤 **[Seq2Seq + Bahdanau Attention](https://github.com/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search)**
+Sequence-to-sequence model with Bahdanau attention and beam search decoding
+
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search?style=flat-square&color=6366F1&labelColor=1E293B)
+
+</td>
+<td width="50%" valign="top">
+
+🧠 **[LSTM from First Principles](https://github.com/Nikhiltogadiya/lstm-from-first-principles)**
+LSTM built entirely from scratch — no frameworks, just math
+
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/lstm-from-first-principles?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/lstm-from-first-principles?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/lstm-from-first-principles?style=flat-square&color=6366F1&labelColor=1E293B)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+🏒 **[Grizzlys Ticketing Forecast](https://github.com/Nikhiltogadiya/grizzlys-ticketing-forecast)**
+ML-based ticket sales forecasting for a professional ice hockey team
+
+![Stars](https://img.shields.io/github/stars/Nikhiltogadiya/grizzlys-ticketing-forecast?style=flat-square&color=3B82F6&labelColor=1E293B)
+![Language](https://img.shields.io/github/languages/top/Nikhiltogadiya/grizzlys-ticketing-forecast?style=flat-square&color=F59E0B&labelColor=1E293B)
+![Forks](https://img.shields.io/github/forks/Nikhiltogadiya/grizzlys-ticketing-forecast?style=flat-square&color=6366F1&labelColor=1E293B)
+
+</td>
+<td width="50%"></td>
+</tr>
+</table>
 
 ---
 
