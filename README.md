@@ -40,7 +40,7 @@
 | 🤖 | [approbation-ai](https://github.com/Nikhiltogadiya/approbation-ai) | AI-powered multi-agent system for document approval workflows |
 | 🎮 | [ROS 2 Grid Sokoban](https://github.com/Nikhiltogadiya/ros2_humble_grid_sokoban) | Camera-based ROS 2 robot navigating and solving a Sokoban grid puzzle |
 | 🔤 | [Seq2Seq + Bahdanau Attention](https://github.com/Nikhiltogadiya/seq2seq-bahdanau-attention-beam-search) | Sequence-to-sequence model with Bahdanau attention and beam search decoding |
-| 🧠 | [LSTM from First Principles](https://github.com/Nikhiltogadiya/lstm-from-first-principles) | LSTM built entirely from scratch — no frameworks, just math |
+| 🧠 | [LSTM from First Principles](https://github.com/Nikhiltogadiya/lstm-from-first-principles) | LSTM built entirely from scratch. no frameworks, just math |
 | 🏒 | [Grizzlys Ticketing Forecast](https://github.com/Nikhiltogadiya/grizzlys-ticketing-forecast) | ML-based ticket sales forecasting for a professional ice hockey team |
 
 ---
